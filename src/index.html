@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodigy-WD-01</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- This header contains a logo of the agency , and navlinks to navigate through different sections -->
+    <header
+      class="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-between px-6 py-4 items-center"
+    >
+      <!-- Logo or Brand Name -->
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold text-blue-600">
+          MKS Solutions
+        </h1>
+      </div>
+
+      <!-- Navigation Menu (hidden on mobile, visible on large screens) -->
+      <nav class="hidden lg:flex">
+        <ul class="flex justify-center text-xl items-center gap-8">
+          <li>
+            <a
+              href="#heroSection"
+              class="hover:text-blue-500 transition-colors duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="hover:text-blue-500 transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="hover:text-blue-500 transition-colors duration-300"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-blue-500 transition-colors duration-300"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <button
+              class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            >
+              Register
+            </button>
+          </li>
+          <li>
+            <button
+              class="text-blue-600 px-4 py-2 rounded-lg hover:text-blue-500 transition-colors duration-300"
+            >
+              Login
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Icon (visible on smaller screens) -->
+      <div class="flex lg:hidden text-3xl">
+        <i class="fa-solid fa-bars cursor-pointer text-blue-600"></i>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="heroSection"
+      class="min-h-screen z-10 flex flex-col justify-center items-center text-center pt-20"
+    >
+      <div class="mb-10">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
+          Your Vision, Our Expertise
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-600 mt-5">
+          Transform Your Business with
+        </p>
+        <br />
+        <span class="text-2xl md:text-4xl font-bold text-blue-600"
+          >AI-Powered Solutions</span
+        >
+      </div>
+      <div class="space-x-6">
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded-lg text-xl sm:text-2xl hover:bg-blue-700 transition-colors duration-300"
+        >
+          Pricing
+        </button>
+        <button
+          class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg text-xl sm:text-2xl hover:bg-blue-600 hover:text-white transition-colors duration-300"
+        >
+          Contact
+        </button>
+      </div>
+    </section>
+
+    <!-- This section contains the details about the agency -->
+    <section
+      id="about"
+      class="flex flex-col justify-center items-center p-4 lg:px-8 lg:py-8"
+    >
+      <!-- Why Us Section -->
+      <h1 class="text-center text-4xl font-extrabold text-gray-800 py-6">
+        Why Us
+      </h1>
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center gap-8 mb-12"
+      >
+        <p
+          class="text-lg md:text-2xl font-light leading-relaxed text-gray-700 w-full lg:w-1/2"
+        >
+          At MKS Solutions, we pride ourselves on delivering exceptional
+          solutions that cater to your business needs. With years of experience
+          in the industry, our team has honed its expertise in providing
+          tailored solutions that drive growth and innovation. Whether it's
+          consulting, implementation, or support, we'll help you navigate the
+          complexities of your business and ensure that you're always ahead of
+          the curve. Our promise to you is to deliver exceptional service, with
+          unwavering dedication and unrelenting passion.
+        </p>
+        <img
+          src="https://images.pexels.com/photos/5716006/pexels-photo-5716006.jpeg"
+          class="w-full pt-4 lg:pt-0 lg:w-1/2 rounded-md object-cover shadow-md"
+          alt="Why us"
+        />
+      </div>
+
+      <!-- Our Journey Section -->
+      <h1 class="text-center text-4xl font-extrabold text-gray-800 py-6">
+        Our Journey
+      </h1>
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+        <img
+          src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          class="w-full pt-4 lg:pt-0 lg:w-1/2 rounded-md object-cover shadow-md"
+          alt="Our journey"
+        />
+        <p
+          class="text-lg md:text-2xl font-light leading-relaxed text-gray-700 w-full lg:w-1/2 lg:pl-6"
+        >
+          From humble beginnings to becoming a trusted partner to numerous
+          businesses, our journey has been marked by a relentless pursuit of
+          excellence and a passion for innovation. With a strong foundation in
+          technology and a keen eye for detail, we've consistently delivered
+          high-quality solutions that have transformed the way businesses
+          operate. Our commitment to excellence has earned us a reputation as a
+          trusted and reliable partner, and we're proud to have worked with some
+          of the most forward-thinking companies across various industries. From
+          small startups to large enterprises, our solutions are tailored to
+          meet the unique needs of each client, ensuring they stay ahead in an
+          ever-evolving marketplace.
+        </p>
+      </div>
+    </section>
+
+    <!-- This section contains the services provided by the agency -->
+    <section
+      id="services"
+      class="flex flex-wrap gap-10 justify-center items-center py-12 px-6 bg-gray-50"
+    >
+      <!-- Heading -->
+      <div class="w-full text-center mb-10">
+        <h1 class="text-4xl font-bold text-gray-800">Our Services</h1>
+        <p class="text-lg text-gray-600 mt-2">
+          We offer a variety of professional services to meet your business
+          needs
+        </p>
+      </div>
+
+      <!-- Graphic Design Service -->
+      <div
+        class="w-full md:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/56759/pexels-photo-56759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Graphic Design"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 text-center mb-4">
+            Graphic Design
+          </h3>
+          <p class="text-gray-600 text-justify mb-6">
+            Transform your ideas into visually stunning designs that captivate
+            your audience and communicate your brand’s message effectively.
+          </p>
+          <button
+            class="block w-full bg-blue-500 text-white font-bold py-2 rounded-md text-center hover:bg-blue-600 transition-colors duration-300"
+          >
+            Know more →
+          </button>
+        </div>
+      </div>
+
+      <!-- Web Design Service -->
+      <div
+        class="w-full md:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Web Design"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 text-center mb-4">
+            Web Design
+          </h3>
+          <p class="text-gray-600 text-justify mb-6">
+            Create responsive, user-friendly websites that not only look great
+            but also provide a seamless experience across all devices.
+          </p>
+          <button
+            class="block w-full bg-blue-500 text-white font-bold py-2 rounded-md text-center hover:bg-blue-600 transition-colors duration-300"
+          >
+            Know more →
+          </button>
+        </div>
+      </div>
+
+      <!-- Digital Marketing Service -->
+      <div
+        class="w-full md:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/177557/pexels-photo-177557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Digital Marketing"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 text-center mb-4">
+            Digital Marketing
+          </h3>
+          <p class="text-gray-600 text-justify mb-6">
+            Boost your online presence with targeted digital marketing
+            strategies that drive traffic, increase engagement, and grow your
+            brand.
+          </p>
+          <button
+            class="block w-full bg-blue-500 text-white font-bold py-2 rounded-md text-center hover:bg-blue-600 transition-colors duration-300"
+          >
+            Know more →
+          </button>
+        </div>
+      </div>
+
+      <!-- Deployment Service -->
+      <div
+        class="w-full md:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Deployment"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 text-center mb-4">
+            Deployment
+          </h3>
+          <p class="text-gray-600 text-justify mb-6">
+            Seamlessly deploy and manage your web applications with our reliable
+            deployment services, ensuring scalability and minimal downtime.
+          </p>
+          <button
+            class="block w-full bg-blue-500 text-white font-bold py-2 rounded-md text-center hover:bg-blue-600 transition-colors duration-300"
+          >
+            Know more →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- This section contains the testimonials of the clients who used the services given by the agency -->
+    <section id="testimonials" class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          What Our Clients Say
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Client 1"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-700">
+              John Doe
+            </h3>
+            <p class="text-gray-600 text-center">
+              "MKS Solutions provided outstanding service and delivered beyond
+              our expectations. Highly recommended!"
+            </p>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Client 2"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-700">
+              Jane Smith
+            </h3>
+            <p class="text-gray-600 text-center">
+              "Professional and efficient! Their solutions helped us grow
+              significantly in a short time."
+            </p>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Client 3"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-center text-gray-700">
+              Michael Lee
+            </h3>
+            <p class="text-gray-600 text-center">
+              "The team's dedication and attention to detail were remarkable. We
+              couldn't be more satisfied!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- this section contains the contact detail of the agency or a contact form -->
+    <section id="contact" class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Get in Touch
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Information -->
+          <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-4">
+              Contact Information
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Feel free to reach out to us for any inquiries or collaborations.
+              We’d love to hear from you!
+            </p>
+            <p class="text-gray-800">
+              <strong>Email:</strong>
+              <a
+                href="mailto:info@mksolutions.com"
+                class="text-blue-500 hover:underline"
+                >info@mksolutions.com</a
+              >
+            </p>
+            <p class="text-gray-800">
+              <strong>Phone:</strong>
+              <a href="tel:+1234567890" class="text-blue-500 hover:underline"
+                >+1 (234) 567-890</a
+              >
+            </p>
+            <p class="text-gray-800">
+              <strong>Address:</strong> 1234 Business Ave, Suite 101, Cityville,
+              Country
+            </p>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <form
+              action="#"
+              method="POST"
+              class="bg-white p-8 rounded-lg shadow-lg"
+            >
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-semibold"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full mt-2 p-3 border rounded-md focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-semibold"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full mt-2 p-3 border rounded-md focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-semibold"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full mt-2 p-3 border rounded-md focus:outline-none focus:border-blue-500"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition-colors"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- this contains the footer -->
+    <footer class="bg-gray-200 text-gray-800 py-8">
+      <div class="container mx-auto px-4">
+        
+    
+          
+    
+          
+    
+          <!-- Social Media Links -->
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" target="_blank" class="text-blue-600 hover:underline">Facebook</a>
+              <a href="#" target="_blank" class="text-blue-600 hover:underline">Twitter</a>
+              <a href="#" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+            </div>
+          </div>
+    
+          <!-- Newsletter Signup -->
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
+            <form  class="flex flex-col md:flex-row">
+              <input type="email" name="email" placeholder="Your email address" required class="p-2 mb-2 md:mb-0 md:mr-2 border border-gray-300 rounded-md">
+              <button type="submit" class="p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Subscribe</button>
+            </form>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="mt-8 text-center text-sm">
+          <a href="https://github.com/QuantumWebStudio/PRODIGY_WD_01.git">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a><br><br>
+          <p>&copy; 2024 MKS Solutions. All rights reserved.</p>
+          <p>
+            <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a> | 
+            <a href="#" class="text-blue-600 hover:underline">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
